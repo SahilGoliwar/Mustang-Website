@@ -11,18 +11,17 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/">
           <img
             className="header__logoImg"
-            src="https://assets.website-files.com/5e8fceb1c9af5c3915ec97a0/5ec2f037975ed372da9f6286_Tesla-Logo-PNG-HD.png"
+            src="https://www.seekpng.com/png/full/413-4130165_shelby-logo-vector-shelby-mustang-cobra-logo.png"
             alt=""
           />
         </Link>
       </div>
       <div className="header__links">
-        <Link to="/">Model S</Link>
-        <Link to="/">Model 3</Link>
-        <Link to="/">Model X</Link>
-        <Link to="/">Model Y</Link>
-        <Link to="/">Solar Roof</Link>
-        <Link to="/">Solar Panels</Link>
+        <Link to="/">History</Link>
+        <Link to="/">Specifications</Link>
+        <Link to="/">Customize</Link>
+        <Link to="/">Features</Link>
+        <Link to="/">Order</Link>
       </div>
       <div className="header__right">
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>

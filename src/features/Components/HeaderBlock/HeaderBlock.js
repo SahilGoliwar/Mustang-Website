@@ -6,7 +6,7 @@ function HeaderBlock() {
     <div className="headerBlock">
       <div className="headerBlock__info">
         <div className="headerBlock__infoText">
-          <h1>Model 3</h1>
+          <h1>Mustang GT 500KR</h1>
           <h4>
             Order Online for <span>Touchless Delivery</span>
           </h4>

@@ -14,7 +14,7 @@
 .header__logoImg {
   object-fit: contain;
   flex: 1;
-  width: 90px;
+  width: 75px;
   margin-right: 100px;
 }
 
