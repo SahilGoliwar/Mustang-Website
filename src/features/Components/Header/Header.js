@@ -21,11 +21,10 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/">Specifications</Link>
         <Link to="/">Customize</Link>
         <Link to="/">Features</Link>
-        <Link to="/">Order</Link>
       </div>
       <div className="header__right">
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>
-          Shop
+          Book Now
         </Link>
         <Link to="/login" className={isMenuOpen && "header__link--hidden"}>
           Account
