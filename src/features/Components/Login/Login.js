@@ -28,7 +28,7 @@ function Login() {
             displayName: userAuth.user.displayName,
           })
         );
-        history.push("/account");
+        history.push("/vehicles");
       })
       .catch((error) => alert(error.message));
   };
@@ -39,7 +39,7 @@ function Login() {
         <div className="login__logo">
           <Link to="/">
             <img
-              src="https://www.seekpng.com/png/full/413-4130165_shelby-logo-vector-shelby-mustang-cobra-logo.png"
+              src="https://allcarbrandslist.com/wp-content/uploads/2021/01/Shelby-Emblem.png"
               alt=""
             />
           </Link>

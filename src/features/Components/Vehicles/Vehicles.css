@@ -1,0 +1,141 @@
+.vehicles__header {
+  padding: 7px 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+}
+
+.vehicles__links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.vehicles__links > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  z-index: 0;
+}
+.vehicles__current {
+  border-bottom: 1px solid #d3d5da;
+}
+
+.vehicles__logo > a > img {
+  object-fit: contain;
+  width: 95px;
+  filter: brightness(0) invert(1);
+  filter: brightness(1) invert(0);
+  margin-right: 70px;
+  margin-left: -20px;
+}
+.vehicles__links > a:hover {
+  border-bottom: 2px solid #d3d5da;
+}
+
+.vehicles__menu {
+  z-index: 2;
+}
+
+.vehicles__menu > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.vehicles__closeMenu {
+  color: black;
+}
+
+.vehicles__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 30px;
+  padding-bottom: 30px;
+}
+
+.vehicles__head > h4 {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: xx-large;
+}
+
+.vehicles__infoRight {
+  display: flex;
+  gap: 20px;
+
+  font-weight: 600;
+}
+
+.vehicles__infoRight > a {
+  text-decoration: none;
+  color: #393c41;
+  font-size: large;
+  transition: all 0.2s;
+  text-transform: capitalize;
+}
+
+.vehicles__infoRight > a:hover {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vehicles__car {
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+.btn__top > a > button {
+  background-color: white;
+  border: 3px solid #171a20;
+  width: 10%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #171a20;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  right: 40px;
+  bottom: 40px;
+  position: fixed;
+}
+
+.btn__top > a > button:hover {
+  background-color: #171a20;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .vehicles__links {
+    display: none;
+  }
+  .vehicles__info {
+    padding-left: 30px;
+  }
+  .header__right > a {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .vehicles__logo > a > img {
+    width: 50px;
+  }
+  .vehicles__head > h4 {
+    font-size: x-large;
+  }
+  .vehicles__infoRight > a {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

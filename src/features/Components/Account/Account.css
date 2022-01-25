@@ -18,14 +18,23 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   z-index: 0;
 }
 
 .account__logo > a > img {
   object-fit: contain;
-  width: 75px;
+  width: 95px;
   filter: brightness(0) invert(1);
+  filter: brightness(1) invert(0);
+  margin-right: 70px;
+  margin-left: -20px;
+}
+.account__links > a:hover {
+  border-bottom: 2px solid #d3d5da;
+}
+.account__current {
+  border-bottom: 1px solid #d3d5da;
 }
 
 .account__menu {
@@ -74,11 +83,82 @@
   font-weight: 600;
 }
 
-.account__car {
-  display: grid;
-  place-items: center;
-  gap: 30px;
+.account__user {
+  display: flex;
+  padding-left: 10px;
+  gap: 10px;
   padding-bottom: 40px;
+}
+.account__user > h1 {
+}
+.Accountform {
+  display: flex;
+  flex-direction: column;
+}
+
+.Accountuser {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Accountuser > h1 {
+  margin-bottom: 30px;
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  outline: none;
+  border-radius: 15px;
+  padding: 12px;
+  color: #393c41;
+  font-weight: 600;
+}
+.Accountactions {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+.Accountlogin {
+  background-color: #3e6ae1;
+  border: none;
+  width: 230px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+  align-items: center;
+}
+
+.Accountlogin:hover {
+  background-color: #3457b1;
+}
+
+.Accountlogout {
+  background-color: transparent;
+  border: 1px solid #000;
+  width: 230px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  /* text-transform: uppercase;  */
+  font-weight: 600px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Accountlogout:hover {
+  background-color: #171a20;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {

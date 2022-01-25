@@ -1,14 +1,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAzpFCME7ImNbMV3w2Tsu7w56_RtsaOwi8",
-  authDomain: "mustang-project-34bd3.firebaseapp.com",
-  projectId: "mustang-project-34bd3",
-  storageBucket: "mustang-project-34bd3.appspot.com",
-  messagingSenderId: "695618480735",
-  appId: "1:695618480735:web:8d9952845ab5abdc6a49ea",
+  apiKey: "AIzaSyCwS-eoU_bTYKakO129s7I-IuXkAvFg20Q",
+  authDomain: "mustang-project-1336e.firebaseapp.com",
+  projectId: "mustang-project-1336e",
+  storageBucket: "mustang-project-1336e.appspot.com",
+  messagingSenderId: "1036913193222",
+  appId: "1:1036913193222:web:73737e20ed4b756c85ee87",
 };
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const auth = firebaseApp.auth();

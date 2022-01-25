@@ -11,16 +11,16 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
         <Link to="/">
           <img
             className="header__logoImg"
-            src="https://www.seekpng.com/png/full/413-4130165_shelby-logo-vector-shelby-mustang-cobra-logo.png"
+            src="https://allcarbrandslist.com/wp-content/uploads/2021/01/Shelby-Emblem.png"
             alt=""
           />
         </Link>
       </div>
       <div className="header__links">
+        <Link to="/vehicles">Vehicles</Link>
+        <Link to="/">Shop</Link>
         <Link to="/">History</Link>
-        <Link to="/">Specifications</Link>
-        <Link to="/">Customize</Link>
-        <Link to="/">Features</Link>
+        <Link to="/">About Shelby</Link>
       </div>
       <div className="header__right">
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>

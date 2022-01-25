@@ -31,17 +31,17 @@ function Signup() {
       .then((userAuth) => {
         userAuth.user
           .updateProfile({
-            displayName: fName,
+            displayName: fName + lName,
           })
           .then(() => {
             dispatch(
               login({
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
-                displayName: fName,
+                displayName: fName + " " + lName,
               })
             );
-            history.push("/account");
+            history.push("/vehicles");
           });
       })
       .catch((error) => alert(error.message));
@@ -53,7 +53,7 @@ function Signup() {
         <div className="signup__logo">
           <Link to="/">
             <img
-              src="https://www.seekpng.com/png/full/413-4130165_shelby-logo-vector-shelby-mustang-cobra-logo.png"
+              src="https://allcarbrandslist.com/wp-content/uploads/2021/01/Shelby-Emblem.png"
               alt=""
             />
           </Link>

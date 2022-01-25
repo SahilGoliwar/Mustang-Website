@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Signup from "./features/Components/Signup/Signup";
 import Account from "./features/Components/Account/Account";
 import { auth } from "./features/Firebase/firebase";
+import Vehicles from "./features/Components/Vehicles/Vehicles";
 
 function App() {
   const user = useSelector(selectUser);
@@ -66,6 +67,10 @@ function App() {
                 {isMenuOpen && <Menu />}
               </>
             )}
+          </Route>
+          <Route exact path="/vehicles">
+            <Vehicles isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {isMenuOpen && <Menu />}
           </Route>
         </Switch>
       </div>

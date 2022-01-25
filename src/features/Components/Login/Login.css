@@ -2,7 +2,7 @@
   display: none;
 }
 .login {
-  padding: 25px;
+  padding: 7px 20px;
   padding-top: 15px;
   height: 100vh;
   display: flex;
@@ -14,14 +14,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 
 .login__logo > a > img {
   object-fit: contain;
-  width: 75px;
-  margin-right: 100px;
+  width: 95px;
+  margin-right: 150px;
+  margin-left: -20px;
 }
 
 .login__language {

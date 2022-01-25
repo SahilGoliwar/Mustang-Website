@@ -5,7 +5,7 @@ import "./Car.css";
 
 function Car({ imgSrc, model, testDrive }) {
   return (
-    <div className="car">
+    <section className="car">
       <div className="car__image">
         <img src={imgSrc} alt="" />
       </div>
@@ -17,7 +17,7 @@ function Car({ imgSrc, model, testDrive }) {
       <div className="car__info">
         <span>Request a Call</span> to speak with a product specialist.
       </div>
-    </div>
+    </section>
   );
 }
 

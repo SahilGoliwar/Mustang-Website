@@ -12,6 +12,9 @@
   left: 0;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
 }
 
 .headerBlock__info {
@@ -92,4 +95,12 @@
   background-color: white;
   color: #393c41;
   opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .headerBlock__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
