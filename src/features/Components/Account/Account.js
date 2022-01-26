@@ -26,8 +26,8 @@ function Account({ isMenuOpen, setIsMenuOpen }) {
 
   return (
     <div className="account">
-      <div className="account__header">
-        <div className="account__logo">
+      <div className="accountheader">
+        <div className="accountlogo">
           <Link to="/">
             <img
               src="https://allcarbrandslist.com/wp-content/uploads/2021/01/Shelby-Emblem.png"
@@ -35,46 +35,43 @@ function Account({ isMenuOpen, setIsMenuOpen }) {
             />
           </Link>
         </div>
-        <div className="account__links">
+        <div className="accountlinks">
           <Link to="/vehicles">Vehicles</Link>
           <Link to="/account">Shop</Link>
           <Link to="/account">History</Link>
           <Link to="/account">About Shelby</Link>
           <Link to="/account">Book Now</Link>
-          <Link className="account__current" to="/account">
+          <Link className="accountcurrent" to="/account">
             Account
           </Link>
         </div>
-        <div
-          className="account__menu"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        <div className="accountmenu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
-            <CloseIcon className="account__closeMenu" />
+            <CloseIcon className="accountcloseMenu" />
           ) : (
             <MenuIcon />
           )}
         </div>
       </div>
-      <div className="account__info">
-        <div className="account__person">
+      <div className="accountinfo">
+        <div className="accountperson">
           <h4>{user?.displayName + "'Account"}</h4>
         </div>
-        <div className="account__infoRight">
+        <div className="accountinfoRight">
           <Link onClick={logoutOfApp}>Sign Out</Link>
         </div>
       </div>
-      <div className="Accountform">
-        <div className="Accountuser">
+      <div className="accountform">
+        <div className="accountuser">
           <label>User Name: </label> <h1>{user?.displayName} </h1>
           <label>User ID: </label> <h1>{user?.uid} </h1>
           <label>Email ID: </label> <h1>{user?.email} </h1>
-          <div className="Accountactions">
+          <div className="accountactions">
             <Link to="/login">
-              <button className="Accountlogin">Reset Password</button>
+              <button className="accountlogin">Reset Password</button>
             </Link>
             <Link onClick={logoutOfApp}>
-              <button className="Accountlogout">Logout</button>
+              <button className="accountlogout">Logout</button>
             </Link>
           </div>
         </div>

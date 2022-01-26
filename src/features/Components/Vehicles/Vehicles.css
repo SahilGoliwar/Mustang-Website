@@ -134,6 +134,9 @@
   .vehicles__infoRight > a {
     display: none;
   }
+  .btn__top > a > button {
+    padding: 2px 2px 2px 2px;
+  }
 }
 
 html {

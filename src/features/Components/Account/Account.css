@@ -1,127 +1,113 @@
-.account__header {
+.accountheader {
   padding: 7px 20px;
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
-
-.account__links {
+.accountlinks {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.account__links > a {
-  color: white;
+.accountlogo > a > img {
+  object-fit: contain;
+  width: 90px;
+  filter: brightness(0) invert(1);
+  filter: brightness(1) invert(0);
+}
+
+.accountlinks > a {
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   z-index: 0;
 }
 
-.account__logo > a > img {
-  object-fit: contain;
-  width: 95px;
-  filter: brightness(0) invert(1);
-  filter: brightness(1) invert(0);
-  margin-right: 70px;
-  margin-left: -20px;
-}
-.account__links > a:hover {
-  border-bottom: 2px solid #d3d5da;
-}
-.account__current {
-  border-bottom: 1px solid #d3d5da;
-}
-
-.account__menu {
+.accountmenu {
   z-index: 2;
 }
 
-.account__menu > .MuiSvgIcon-root {
+.accountmenu > .MuiSvgIcon-root {
   cursor: pointer;
 }
 
-.account__closeMenu {
-  color: black;
+.accountclose {
+  color: #000;
 }
-
-.account__info {
+.accountinfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 30px;
-  padding-bottom: 30px;
+  padding: 60px 140px;
+  padding-bottom: 10px;
 }
 
-.account__person > h4 {
-  font-weight: 900;
+.accountperson > h4 {
+  font-weight: 500;
   text-transform: capitalize;
   font-size: x-large;
+  margin-bottom: 60px;
 }
 
-.account__infoRight {
+.accountinfoRight {
   display: flex;
   gap: 20px;
-
-  font-weight: 600;
 }
 
-.account__infoRight > a {
+.accountinfoRight > a {
   text-decoration: none;
   color: #393c41;
-  font-size: large;
+  font-size: medium;
   transition: all 0.2s;
   text-transform: capitalize;
 }
-
-.account__infoRight > a:hover {
-  color: black;
-  font-weight: 600;
+.accountinfoRight > a:hover {
+  color: #000;
+  font-weight: 500;
 }
 
-.account__user {
-  display: flex;
-  padding-left: 10px;
-  gap: 10px;
-  padding-bottom: 40px;
+.accountcar {
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  padding: 40px;
 }
-.account__user > h1 {
-}
-.Accountform {
+
+.accountform {
   display: flex;
   flex-direction: column;
 }
 
-.Accountuser {
+.accountuser {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 330px;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Accountuser > h1 {
+.accountuser > h1 {
   margin-bottom: 30px;
-  background-color: #f4f4f4;
-  border: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
   outline: none;
-  border-radius: 15px;
-  padding: 12px;
   color: #393c41;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 14px;
+  max-width: 500px;
 }
-.Accountactions {
+.accountactions {
   display: flex;
   flex-direction: row;
   gap: 50px;
   align-items: center;
 }
-.Accountlogin {
+.accountlogin {
   background-color: #3e6ae1;
   border: none;
   width: 230px;
@@ -137,11 +123,11 @@
   align-items: center;
 }
 
-.Accountlogin:hover {
+.accountlogin:hover {
   background-color: #3457b1;
 }
 
-.Accountlogout {
+.accountlogout {
   background-color: transparent;
   border: 1px solid #000;
   width: 230px;
@@ -153,30 +139,75 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   outline: none;
-  font-family: "Montserrat", sans-serif;
 }
 
-.Accountlogout:hover {
+.accountlogout:hover {
   background-color: #171a20;
   color: #fff;
 }
 
-@media (max-width: 1000px) {
-  .account__links {
+@media (max-width: 1100px) {
+  .accountlinks > a {
     display: none;
   }
-  .account__info {
-    padding-left: 30px;
+  .accountperson > h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: large;
   }
-  .header__right > a {
-    display: none;
+  .accountlogin {
+    width: 200px;
+    padding: 10px 36px;
+    font-size: 10px;
+  }
+  .accountlogout {
+    width: 200px;
+    padding: 10px 36px;
+    font-size: 10px;
   }
 }
-@media (max-width: 800px) {
-  .account__logo > a > img {
-    width: 50px;
+
+@media (max-width: 650px) {
+  .accountlinks > a {
+    display: none;
   }
-  .account__person > h4 {
-    font-size: large;
+  .accountperson > h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: small;
+  }
+  .accountinfoRight > a {
+    font-size: x-small;
+  }
+  .accountlogin {
+    width: 125px;
+    padding: 8px 30px;
+    font-size: 8px;
+  }
+  .accountlogout {
+    width: 125px;
+    padding: 8px 30px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accountperson > h4 {
+    font-size: medium;
+    margin-left: -100px;
+  }
+  .accountlogo > a > img {
+    width: 75px;
+  }
+  .accountlogin {
+    width: 80px;
+    padding: 6px 24px;
+  }
+  .accountlogout {
+    width: 80px;
+    padding: 6px 24px;
+  }
+  .accountinfoRight {
+    margin-right: -80px;
   }
 }
